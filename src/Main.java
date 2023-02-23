@@ -22,6 +22,19 @@ public class Main {
             }
         }
     }
+    public static String term(int deliveryDistance) {
+        int deliveryTerm = 1;
+        if (deliveryDistance > 100) {
+            return "Доставка не осуществляется";
+        }
+        if (deliveryDistance >= 20) {
+            deliveryTerm++;
+        }
+        if (deliveryDistance >= 60 && deliveryDistance <= 100) {
+            deliveryTerm++;
+        }
+        return ("Дней доставки: " + deliveryTerm);
+    }
 
     public static void main(String[] args) {
         task1();
@@ -38,11 +51,15 @@ public class Main {
         System.out.println("Задача 2");
         changeOS(0, 2013);
 
-
         }
 
         public static void task3 () {
             System.out.println("Задача 3");
+
+            System.out.println(term(8));
+            System.out.println(term(40));
+            System.out.println(term(80));
+            System.out.println(term(120));
 
         }
     }
