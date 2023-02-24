@@ -56,9 +56,6 @@ public class Main {
         public static void task3 () {
             System.out.println("Задача 3");
 
-            System.out.println(term(8));
-            System.out.println(term(40));
-            System.out.println(term(80));
             System.out.println(term(120));
 
         }
